@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./StartScreen.module.css";
 
 type StartScreenProps = {
@@ -19,13 +18,11 @@ export function StartScreen({ onStart }: StartScreenProps) {
         <p>Ready for</p>
         <p>the challenge?</p>
       </div>
-      <Image
+      <img
         src="/assets/start-blob.svg"
         alt=""
-        fill
         className={styles.blob}
-        unoptimized
-        priority
+        draggable={false}
         aria-hidden
       />
       <p className={styles.cta}>Tap to start</p>

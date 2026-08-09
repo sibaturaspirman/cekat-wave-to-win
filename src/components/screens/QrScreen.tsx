@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { CekatLogo } from "@/components/ui/CekatLogo";
 import { PillLabel } from "@/components/ui/PillLabel";
@@ -51,13 +50,13 @@ export function QrScreen({ onBackHome }: QrScreenProps) {
       <div className={styles.scannerWrap}>
         <ScannerFrame>
           {qrUrl ? (
-            <Image
+            <img
               src={qrUrl}
               alt="QR code"
               width={1124}
               height={1124}
               className={styles.qr}
-              unoptimized
+              draggable={false}
             />
           ) : (
             <p className={styles.loading}>Loading QR…</p>

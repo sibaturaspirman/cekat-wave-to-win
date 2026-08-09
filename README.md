@@ -66,7 +66,8 @@ Offline notes:
 - No CDN calls at runtime for wave detection.  
 - Camera still needs device permission (works offline).  
 - First install/update still needs network once so the service worker can precache everything.  
-- Fallback page: `/~offline`  
+- After updating the PWA build: open online once, wait for SW update, then offline reopen works.  
+- In Chrome DevTools → Application → Service Workers: confirm `/serwist/sw.js` is **activated & running**.  
 - Re-sync MediaPipe assets after upgrading `@mediapipe/tasks-vision`: `npm run sync:mediapipe`
 
 ### Env

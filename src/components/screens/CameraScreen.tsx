@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CekatLogo } from "@/components/ui/CekatLogo";
 import { PillLabel } from "@/components/ui/PillLabel";
@@ -118,13 +117,14 @@ export function CameraScreen({ onWaveDetected }: CameraScreenProps) {
                 top: `${tracking.handY * 100}%`,
               }}
             >
-              <Image
+              {/* Plain img so SW can serve /assets/* offline (no /_next/image). */}
+              <img
                 src="/assets/logo-cekat-2.png"
                 alt=""
                 width={180}
                 height={146}
                 className={styles.handIconImage}
-                unoptimized
+                draggable={false}
                 aria-hidden
               />
             </div>
