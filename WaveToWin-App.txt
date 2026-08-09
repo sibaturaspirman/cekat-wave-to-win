@@ -1,0 +1,94 @@
+================================================================================
+  WAVE TO WIN — Tata Cara Install (PWA)
+================================================================================
+
+Link App:
+https://cekat-wave-to-win.vercel.app/
+
+--------------------------------------------------------------------------------
+A. PERSIAPAN
+--------------------------------------------------------------------------------
+
+1. Pastikan perangkat terhubung internet (untuk install pertama kali).
+2. Gunakan browser Google Chrome / Microsoft Edge (disarankan).
+3. Layar ideal: portrait (tegak) 1080x1920 atau 2160x3840.
+4. Siapkan kamera yang bisa diakses browser (untuk deteksi wave).
+
+
+--------------------------------------------------------------------------------
+B. INSTALL DI WINDOWS (Chrome / Edge)
+--------------------------------------------------------------------------------
+
+1. Buka link app di browser:
+   https://cekat-wave-to-win.vercel.app/
+
+2. Tunggu halaman "Ready for the challenge?" muncul penuh
+   (jangan langsung offline dulu).
+
+3. Install aplikasi:
+   - Klik ikon Install (ikon monitor + panah) di kanan address bar, ATAU
+   - Menu browser (titik tiga) → "Install Wave to Win..." / "Install app"
+     / "Add to Home screen"
+
+4. Konfirmasi Install.
+
+5. Buka aplikasi dari ikon Wave to Win yang sudah terpasang
+   (bukan dari tab browser biasa).
+
+6. Saat diminta izin kamera → pilih Allow / Izinkan.
+
+
+--------------------------------------------------------------------------------
+C. PENTING: AGAR BISA OFFLINE
+--------------------------------------------------------------------------------
+
+Offline HANYA berhasil jika langkah ini sudah dilakukan SEKALI saat online:
+
+1. Buka app (versi yang sudah di-install) dalam keadaan ONLINE.
+2. Biarkan beberapa detik sampai semua asset ter-cache
+   (termasuk model deteksi tangan).
+3. Opsional: masuk ke Screen 2 (kamera) sekali agar kamera & deteksi
+   wave terinisialisasi.
+4. Baru setelah itu app boleh dipakai / ditutup lalu dibuka lagi
+   dalam keadaan OFFLINE.
+
+Jika langsung offline sebelum langkah di atas selesai, akan muncul
+pesan "You're offline".
+
+
+--------------------------------------------------------------------------------
+D. JIKA ADA MASALAH
+--------------------------------------------------------------------------------
+
+1. App tidak bisa dibuka offline
+   - Buka lagi SEKALI saat online, tunggu loading selesai, lalu coba offline.
+   - Uninstall PWA → install ulang dari link di atas.
+
+2. Kamera tidak muncul
+   - Cek izin kamera di pengaturan browser / sistem.
+   - Pastikan tidak ada aplikasi lain yang memakai kamera.
+
+3. Logo di tangan / deteksi wave tidak jalan
+   - Pastikan sudah pernah buka online dulu (model MediaPipe ter-cache).
+   - Pastikan tangan terlihat jelas di frame kamera.
+   - Lambaikan tangan kiri-kanan beberapa kali sampai progress penuh.
+
+4. Setelah update app terbaru
+   - Buka online sekali agar Service Worker ter-update,
+     lalu baru dipakai offline.
+
+
+--------------------------------------------------------------------------------
+E. CATATAN KIOSK / TV
+--------------------------------------------------------------------------------
+
+- Disarankan tampilan fullscreen / standalone (hasil install PWA).
+- Orientasi layar: portrait (tegak).
+- Jangan hapus data site / clear browsing data jika ingin tetap offline.
+- QR mengarah ke game scratch (default):
+  https://cekat-scratch-logo.vercel.app/
+
+
+================================================================================
+  Cekat.AI — WhatsApp Business Summit 2026
+================================================================================
