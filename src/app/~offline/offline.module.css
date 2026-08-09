@@ -1,0 +1,42 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 24px;
+  padding: 48px;
+  text-align: center;
+  background: #000000;
+  color: #ffffff;
+}
+
+.brand {
+  margin: 0;
+  color: #00afff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.copy {
+  margin: 0;
+  max-width: 420px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.button {
+  margin-top: 12px;
+  padding: 16px 32px;
+  border-radius: 999px;
+  background: #00afff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}

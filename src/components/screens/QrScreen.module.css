@@ -1,0 +1,82 @@
+.screen {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: var(--color-cream);
+  color: inherit;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  text-align: left;
+}
+
+.screen:focus-visible {
+  outline: 8px solid var(--color-accent);
+  outline-offset: -16px;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.65), transparent 55%),
+    var(--color-cream);
+  pointer-events: none;
+}
+
+.label {
+  position: absolute;
+  left: 50%;
+  top: 560px;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.scannerWrap {
+  position: absolute;
+  left: 50%;
+  top: 1210px;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.qr {
+  width: 1124px;
+  height: 1124px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.loading {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: 72px;
+}
+
+.countdown {
+  position: absolute;
+  left: 50%;
+  top: 3011px;
+  transform: translateX(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tapHint {
+  position: absolute;
+  left: 50%;
+  top: 3450px;
+  transform: translateX(-50%);
+  margin: 0;
+  width: 1600px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 56px;
+  pointer-events: none;
+}

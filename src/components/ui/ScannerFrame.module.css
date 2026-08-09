@@ -1,0 +1,21 @@
+.frame {
+  position: relative;
+  width: 1374px;
+  height: 1423px;
+}
+
+.content {
+  position: absolute;
+  inset: 48px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.corners {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
