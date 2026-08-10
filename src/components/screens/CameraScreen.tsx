@@ -46,14 +46,18 @@ export function CameraScreen({ onWaveDetected }: CameraScreenProps) {
 
   const handleTracking = useCallback((state: WaveTrackingState) => {
     setTracking((prev) => {
-      if (prev.progress >= 1) {
-        return {
-          ...state,
-          progress: 1,
-          swings: Math.max(state.swings, prev.requiredSwings),
-        };
-      }
-      return state;
+      // Never let a missed-hand frame roll progress backwards.
+      const swings = Math.max(prev.swings, state.swings);
+      const progress = Math.max(
+        prev.progress,
+        state.progress,
+        Math.min(1, swings / prev.requiredSwings),
+      );
+      return {
+        ...state,
+        swings,
+        progress: prev.progress >= 1 ? 1 : progress,
+      };
     });
   }, []);
 

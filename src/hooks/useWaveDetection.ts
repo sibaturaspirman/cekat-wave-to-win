@@ -125,19 +125,19 @@ export function useWaveDetection({
       });
     }
 
-    function resetSwingWindow() {
-      changesRef.current = 0;
+    /** Clear short-term motion sample only — keep wave progress. */
+    function pauseSwingSampling() {
       directionRef.current = 0;
       swingMinRef.current = null;
       swingMaxRef.current = null;
       xsRef.current = [];
-      emitTracking({ handVisible: false, progress: 0, swings: 0 });
+      emitTracking({ handVisible: false });
     }
 
     function handleMissingHand() {
       missedFrames += 1;
       if (missedFrames >= MAX_MISSED_FRAMES) {
-        resetSwingWindow();
+        pauseSwingSampling();
       } else {
         emitTracking({ handVisible: false });
       }
